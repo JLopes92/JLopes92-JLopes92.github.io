@@ -1,99 +1,273 @@
-/* Estilos gerais */
+/* Estilo da página */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.roboto-thin {
+ font-family: "Roboto", sans-serif;
+ font-weight: 100;
+ font-style: normal;
+}
+
+.roboto-light {
+ font-family: "Roboto", sans-serif;
+ font-weight: 300;
+ font-style: normal;
+}
+
+.roboto-regular {
+ font-family: "Roboto", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+}
+
+.roboto-medium {
+ font-family: "Roboto", sans-serif;
+ font-weight: 500;
+ font-style: normal;
+}
+
+.roboto-bold {
+ font-family: "Roboto", sans-serif;
+ font-weight: 700;
+ font-style: normal;
+}
+
+.roboto-black {
+ font-family: "Roboto", sans-serif;
+ font-weight: 900;
+ font-style: normal;
+}
+
+.roboto-thin-italic {
+ font-family: "Roboto", sans-serif;
+ font-weight: 100;
+ font-style: italic;
+}
+
+.roboto-light-italic {
+ font-family: "Roboto", sans-serif;
+ font-weight: 300;
+ font-style: italic;
+}
+
+.roboto-regular-italic {
+ font-family: "Roboto", sans-serif;
+ font-weight: 400;
+ font-style: italic;
+}
+
+.roboto-medium-italic {
+ font-family: "Roboto", sans-serif;
+ font-weight: 500;
+ font-style: italic;
+}
+
+.roboto-bold-italic {
+ font-family: "Roboto", sans-serif;
+ font-weight: 700;
+ font-style: italic;
+}
+
+.roboto-black-italic {
+ font-family: "Roboto", sans-serif;
+ font-weight: 900;
+ font-style: italic;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+ background-color: #101010;
+ font-family: "Roboto", sans-serif;
+ color: #fff; /* Adiciona uma cor de texto padrão */
 }
 
-/* Estilos do cabeçalho */
-header .interface {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+.interface {
+ max-width: 1280px;
+ margin: 0 auto;
 }
 
-header .menu_pc ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+.flex {
+ display: flex;
 }
 
-header .menu_pc ul li {
-    display: inline;
+/* Estilos do menu */
+header {
+ padding: 40px 4%;
 }
 
-header .menu_pc ul li a {
-    text-decoration: none;
-    color: #000;
+header > .interface {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
 }
 
-/* Estilos do botão de contato */
+header a {
+ color: #e9967a;
+ text-decoration: none;
+ cursor: pointer;
+ display: inline-block;
+ transition: 1s;
+}
+
+header a:hover {
+ color: bisque;
+ transform: scale(1.05);
+}
+
+header nav ul {
+ display: flex;
+}
+
+header nav ul li {
+ padding: 0 20px;
+}
+
 .btn_contacto button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+ padding: 10px 40px;
+ font-size: 18px;
+ background-color: #e9967a;
+ border-radius: 20px;
+ border: 0;
+ cursor: pointer;
 }
 
-.btn_contacto button:hover {
-    background-color: #333;
+header .btn_contacto button:hover {
+ box-shadow: 0px 0px 5px bisque;
 }
 
-/* Estilos do contentor principal */
+/* Contentor principal flex e ajuste de conteúdo na página */
 main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+ display: flex;
+ justify-content: space-around;
+ padding: 20px;
 }
 
-.contentor-texto {
-    flex: 1;
+main .contentor-texto {
+ color: #fff;
+ margin-right: 40px;
 }
 
-aside {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contentor-texto h1 {
+ margin-bottom: 20px;
 }
 
-/* Estilos da seção Especialidade */
+main .contentor-texto p {
+ margin-bottom: 30px;
+ width: 600px;
+}
+
+.contentor-texto button {
+ padding: 10px 40px;
+ font-size: 18px;
+ background-color: #e9967a;
+ border-radius: 20px;
+ border: 0;
+ cursor: pointer;
+}
+
+/* Estilo da imagem na direita */
+main img {
+ width: 300px;
+}
+
+/* Seção de especialidade */
+.Especialidade {
+ padding: 40px 0;
+ justify-content: space-between;
+}
+
 .Especialidade .interface {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .Especialidade .flex {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+ display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .caixa_especialidade {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ border: 1px solid #ccc;
+ padding: 10px 40px;
+ font-size: 18px;
+ background-color: #e9967a;
+ border-radius: 20px;
+ border: 0;
+ cursor: pointer;
+ transition: 1s;
+}
+.caixa_especialidade :hover{
+ transform: scale(1.05);
 }
 
 .caixa_especialidade i {
-    font-size: 2rem;
-    margin-bottom: 10px;
+ font-size: 80px;
+ margin-bottom: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ transition: 1s;
 }
 
 .caixa_especialidade h2 {
-    margin: 10px 0;
+ margin: 10px 0;
 }
 
 .caixa_especialidade p {
-    margin: 0;
+ margin: 0;
+}
+
+/* Ajuste no menu para espaçamento entre itens */
+.menu_pc ul {
+ display: flexbox;
+ gap: 20px;
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+.menu_pc li {
+ padding: 0 20px;
+}
+
+.menu_pc a:hover {
+ transform: scale(1.1);
+}
+
+/* Estilo PortFolio */
+
+section.Portfolio{
+ padding: 80px 4%;
+ box-shadow: 0 0 40px 10px coral;
+}
+
+section.Portfolio .flex{
+ display: flex;
+ justify-content: space-around;
+ }
+
+.imagem1
+.imagem2
+.imagem3{
+ width: 360px;
+ height: 460px;
+ background-color: cover;
+ cursor: pointer;
+}
+
+.overlay{
+ font-size: 80px;
+ margin-bottom: 460px;
+ align-items: center;
+ justify-content: space-between;
+ display: flex;
+ border-radius: 40px;
 }
