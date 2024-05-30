@@ -101,6 +101,7 @@ header > .interface {
  display: flex;
  align-items: center;
  justify-content: space-between;
+ text-decoration: none;
 }
 
 header a {
@@ -170,7 +171,28 @@ main .contentor-texto p {
 /* Estilo da imagem na direita */
 main img {
  width: 300px;
+ border-radius: 20px;
 }
+/* test floating animation */
+
+main img{
+ width: 200px;
+ margin-left: 200px;
+ animation: floatingImage 10s ease infinite alternate; 
+}
+
+@keyframes floatingImage{
+ 0%{
+   transform: translateY(0px);
+ }
+ 50%{
+   transform: translateY(25px);
+ }
+ 100%{
+   transform: translateY(0px);
+ }
+}
+
 
 /* Seção de especialidade */
 .Especialidade {
@@ -271,3 +293,4 @@ section.Portfolio .flex{
  display: flex;
  border-radius: 40px;
 }
+
