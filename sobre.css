@@ -116,6 +116,7 @@
    header a:hover {
     color: bisque;
     transform: scale(1.05);
+    mask-position: none;
    }
    
    header nav ul {

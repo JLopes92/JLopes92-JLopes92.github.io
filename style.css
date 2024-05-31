@@ -276,19 +276,27 @@ section.Portfolio .flex{
  justify-content: space-around;
  }
 
-.imagem1
-.imagem2
+.imagem1{
+  padding:  80px;
+  padding-bottom: 20%;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.imagem2{
+width: 100px;
+border-radius: 40px;
+cursor: pointer;
+   }
+
 .imagem3{
- width: 360px;
- height: 460px;
- background-color: cover;
- cursor: pointer;
+   border-radius: 40px;
+  cursor: pointer;
 }
 
 .overlay{
  font-size: 80px;
  margin-bottom: 460px;
- align-items: center;
  justify-content: space-between;
  display: flex;
  border-radius: 40px;
